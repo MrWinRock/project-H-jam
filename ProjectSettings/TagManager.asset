@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ticket
+  - ClockMachine
   layers:
   - Default
   - TransparentFX
@@ -11,9 +13,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - DragObject
+  - Scene
+  - ClockIn
   - 
   - 
   - 
@@ -40,4 +42,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Scene
+    uniqueID: 848374991
+    locked: 0
+  - name: DragObject
+    uniqueID: 2291386685
+    locked: 0
+  - name: ClockInMachine
+    uniqueID: 725869361
+    locked: 0
+  - name: Button
+    uniqueID: 1547097217
     locked: 0

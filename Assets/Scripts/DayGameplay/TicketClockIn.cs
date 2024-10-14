@@ -46,4 +46,12 @@ public class TicketClockIn : MonoBehaviour {
         mousePoint.z = cam.nearClipPlane; // distance from the camera
         return cam.ScreenToWorldPoint(mousePoint);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ghost"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

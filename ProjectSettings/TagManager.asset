@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ticket
   - ClockMachine
+  - Ghost
+  - TicketClockIn
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - DragObject
   - Scene
   - ClockIn
-  - 
+  - Ghost
   - 
   - 
   - 
@@ -42,6 +44,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ghost
+    uniqueID: 1074494307
     locked: 0
   - name: Scene
     uniqueID: 848374991

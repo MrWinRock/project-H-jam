@@ -8,6 +8,7 @@ TagManager:
   - ClockMachine
   - Ghost
   - TicketClockIn
+  - End
   layers:
   - Default
   - TransparentFX

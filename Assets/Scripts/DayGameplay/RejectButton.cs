@@ -20,8 +20,7 @@ public class RejectButton : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        GameObject foundObject = GameObject.FindWithTag("TicketClockIn");
-        if (foundObject == null)
+        if (GameObject.FindWithTag("TicketClockIn") == null)
         {
             currentTime -= Time.deltaTime;
             Console.WriteLine(currentTime);

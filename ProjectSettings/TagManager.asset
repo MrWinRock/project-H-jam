@@ -9,6 +9,7 @@ TagManager:
   - Ghost
   - TicketClockIn
   - End
+  - Shaman
   layers:
   - Default
   - TransparentFX

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AcceptTicket : MonoBehaviour
@@ -20,8 +21,7 @@ public class AcceptTicket : MonoBehaviour
 
     void Update()
     {
-        GameObject foundObject = GameObject.FindWithTag("TicketClockIn");
-        if (foundObject != null)
+        if (GameObject.FindWithTag("TicketClockIn") != null)
         {
             currentTime -= Time.deltaTime;
             Console.WriteLine(currentTime);
@@ -34,7 +34,7 @@ public class AcceptTicket : MonoBehaviour
         {
             Debug.Log("Object with tag exist in the scene.");
         }
-}
+    }
         private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("TicketClockIn"))

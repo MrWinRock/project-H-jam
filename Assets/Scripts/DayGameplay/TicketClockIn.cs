@@ -49,7 +49,7 @@ public class TicketClockIn : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ghost"))
+        if (collision.CompareTag("Ghost") || collision.CompareTag("Shaman"))
         {
             Destroy(gameObject);
         }

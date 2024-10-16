@@ -20,12 +20,12 @@ public class SpawnWithProbability : MonoBehaviour {
     {
         while (true)
         {
-            if (GameObject.FindWithTag("Ghost") == null && !isWaiting)
+            if (GameObject.FindWithTag("Ghost") == null && GameObject.FindWithTag("Shaman") == null && !isWaiting)
             {
                 SpawnObjectWithProbability();
             }
             else
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(2f);
         }
     }
 

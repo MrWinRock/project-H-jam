@@ -17,8 +17,9 @@ public class DestroyTicket : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject foundObject = GameObject.FindWithTag("Ghost");
-        if (foundObject == null)
+        GameObject foundObject1 = GameObject.FindWithTag("Ghost");
+        GameObject foundObject2 = GameObject.FindWithTag("Shaman");
+        if (foundObject1 == null && foundObject2 == null)
         {
             Destroy(gameObject);
         }

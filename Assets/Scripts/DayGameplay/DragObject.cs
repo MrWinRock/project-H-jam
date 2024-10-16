@@ -1,3 +1,4 @@
+using System;
 using System.Collections;  // Required for IEnumerator
 using System.Collections.Generic;  // Commonly used for lists and collections
 using UnityEngine;
@@ -25,6 +26,16 @@ public class DragObject : MonoBehaviour {
         maxX = screenTopRight.x - (GetComponent<SpriteRenderer>().bounds.size.x / 2);
         minY = screenBottomLeft.y + (GetComponent<SpriteRenderer>().bounds.size.y / 2);
         maxY = screenTopRight.y - (GetComponent<SpriteRenderer>().bounds.size.y / 2);
+    }
+
+    void Update()
+    {
+        GameObject foundObject1 = GameObject.FindWithTag("Ghost");
+        GameObject foundObject2 = GameObject.FindWithTag("Shaman");
+        if (foundObject1 == null && foundObject2 == null)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnMouseDown()

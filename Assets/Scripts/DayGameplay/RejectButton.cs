@@ -20,7 +20,9 @@ public class RejectButton : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindWithTag("TicketClockIn") == null)
+        GameObject foundObject1 = GameObject.FindWithTag("Check");
+        GameObject foundObject2 = GameObject.FindWithTag("TicketClockIn");
+        if (foundObject2 == null && foundObject1 == null)
         {
             currentTime -= Time.deltaTime;
             Console.WriteLine(currentTime);
@@ -31,29 +33,32 @@ public class RejectButton : MonoBehaviour {
         }
         else
         {
-            Debug.Log("Object with tag does not exist in the scene.");
+            Debug.Log("Object with tag exist in the scene.");
         }
     }
 
     // This method is called when the mouse button is pressed over the object
     private void OnMouseDown()
     {
-        currentTime = 15f;
-        Debug.Log("Mouse Down on RejectButton!");
-
-        // Check if the object to move is assigned
-        if (objectToMove != null)
+        if (GameObject.FindWithTag("Check") == null)
         {
-            // Change the position of the object
-            objectToMove.transform.position = newPosition;
-            Debug.Log(objectToMove.name + " moved to: " + newPosition);
+            currentTime = 15f;
+            Debug.Log("Mouse Down on RejectButton!");
 
-        }
-        if (objectToDestroy.scene.isLoaded) // Check if the GameObject is in a loaded scene
-        {
-            Destroy(objectToDestroy);
-        }
+            // Check if the object to move is assigned
+            if (objectToMove != null)
+            {
+                // Change the position of the object
+                objectToMove.transform.position = newPosition;
+                Debug.Log(objectToMove.name + " moved to: " + newPosition);
 
+            }
+
+            if (objectToDestroy.scene.isLoaded) // Check if the GameObject is in a loaded scene
+            {
+                Destroy(objectToDestroy);
+            }
+        }
     }
 
     // Optional: This method is called when the mouse hovers over the object

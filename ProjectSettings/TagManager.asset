@@ -10,6 +10,8 @@ TagManager:
   - TicketClockIn
   - End
   - Shaman
+  - Check
+  - MainCard
   layers:
   - Default
   - TransparentFX

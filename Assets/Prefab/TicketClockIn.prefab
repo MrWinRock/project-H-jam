@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8949750264919241602}
   - component: {fileID: 5116437657182240102}
   - component: {fileID: 874849080264183999}
+  - component: {fileID: 96122138799917454}
   m_Layer: 6
   m_Name: TicketClockIn
   m_TagString: TicketClockIn
@@ -29,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 8299675735587527704}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.37, y: -3.28, z: 0}
-  m_LocalScale: {x: 1.5, y: 3, z: 1}
+  m_LocalPosition: {x: 0.041, y: -1.7063, z: 0}
+  m_LocalScale: {x: 0.91275, y: 1.5012, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -73,10 +74,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2003580611
-  m_SortingLayer: 3
+  m_SortingLayerID: 1547097217
+  m_SortingLayer: 5
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 217aae4aa611e7e44bcd111c13e77113, type: 3}
   m_Color: {r: 0.23698735, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,18 +120,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.077344656}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.4, y: 2.1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.3718405, y: 1.916235}
   m_EdgeRadius: 0
 --- !u!50 &5116437657182240102
 Rigidbody2D:
@@ -171,3 +172,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37e9a2906f1fe384485c43400c36b09a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &96122138799917454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8299675735587527704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41386b58dd0c3ad4abbf3e808f276a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 4818367157104970615, guid: 423571257e6391841acbad54f8da36e0, type: 3}
+  spawnPosition: {x: 0, y: 10, z: 0}
+  middlePosition: {x: 0, y: -1.9, z: 0}
+  spawnDelay: 1

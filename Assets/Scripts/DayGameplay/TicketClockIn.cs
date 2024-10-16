@@ -49,9 +49,13 @@ public class TicketClockIn : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ghost") || collision.CompareTag("Shaman"))
+        GameObject foundObject1 = GameObject.FindWithTag("Check");
+        if (foundObject1 != null)
         {
-            Destroy(gameObject);
+            if (collision.CompareTag("Ghost") || collision.CompareTag("Shaman"))
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

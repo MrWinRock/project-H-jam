@@ -17,4 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NightGamePlay.unity
     guid: 6fca585f2f3fa5045b89ecf03f99c5bb
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 63d474cf4b15a9b40beda73dea91828f, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 4af8bd61260e6ab4686685ab4e6de12b, type: 2}

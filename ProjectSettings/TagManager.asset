@@ -12,6 +12,7 @@ TagManager:
   - Shaman
   - Check
   - MainCard
+  - Audio
   layers:
   - Default
   - TransparentFX

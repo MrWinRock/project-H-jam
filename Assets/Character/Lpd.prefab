@@ -105,7 +105,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1840080600203869547}
   - component: {fileID: 7348168249814699811}
-  - component: {fileID: 4202343209158599284}
   m_Layer: 7
   m_Name: Lpd
   m_TagString: Lpd
@@ -168,7 +167,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1074494307
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 169798e022523694faed5e42c6cc291b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -181,16 +180,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4202343209158599284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111801019118458350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88cfce89c1e7b0b4dbcadc5ceae5a875, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countdownTime: 3

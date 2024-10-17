@@ -32,6 +32,7 @@ public class RejectButton : MonoBehaviour {
             if (currentTime <= 0)
             {
                 objectToMove.transform.position = oldPosition;
+                prefabToActive.SetActive(false);
             }
         }
         else

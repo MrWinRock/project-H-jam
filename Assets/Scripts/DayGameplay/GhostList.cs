@@ -13,9 +13,11 @@ namespace DayGameplay
         private int currentGhostIndex = 0;
         public float delayBetweenGhosts = 2f; // Delay in seconds
         private bool isWaitingForNextGhost = false; // To ensure no overlapping coroutines
+        public bool isGhost;
 
         void Start()
         {
+            // Start
             // Set the first ghost active if the array is not empty
             if (ghosts.Length > 0 && ghosts[currentGhostIndex] != null)
             {
@@ -31,8 +33,21 @@ namespace DayGameplay
                 // Start the coroutine to activate the next ghost with a delay
                 StartCoroutine(ActivateNextGhostWithDelay());
             }
+            setIsGhost();
         }
 
+        public void setIsGhost()
+        {
+            if (currentGhostIndex < ghosts.Length && ghosts[currentGhostIndex] != null && ghosts[currentGhostIndex].CompareTag("Ghost"))
+            {
+                isGhost = true;
+            }
+            else
+            {
+                isGhost = false;
+            }
+        }
+        
         IEnumerator ActivateNextGhostWithDelay()
         {
             isWaitingForNextGhost = true; // Prevent additional coroutines from starting

@@ -13,18 +13,12 @@ private bool hasSpawned = false;
     void Start()
     {
         // Start the coroutine to spawn the object after a delay
-        StartCoroutine(SpawnAfterDelay());
+        SpawnObjects();
     }
 
     void Update()
     {
         
-    }
-
-    IEnumerator SpawnAfterDelay()
-    {
-        yield return new WaitForSeconds(spawnDelay);
-        SpawnObjects();
     }
 
     void SpawnObjects()

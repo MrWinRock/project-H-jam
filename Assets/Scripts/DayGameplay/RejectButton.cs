@@ -8,10 +8,13 @@ public class RejectButton : MonoBehaviour {
     public GameObject objectToDestroy;    // Object to destroy  // Script to enable
     public GameObject objectToMove;
     public GameObject ticketClockIn;// Object to move
+    public GameObject prefabToActive;
     public Vector3 newPosition;
     public Vector3 oldPosition;
     public float countdownTime;           // New position to set
     private float currentTime;
+    public Vector3 spawnPosition1;
+    private bool hasSpawned = false;
 
     void Start()
     {
@@ -29,6 +32,7 @@ public class RejectButton : MonoBehaviour {
             if (currentTime <= 0)
             {
                 objectToMove.transform.position = oldPosition;
+                prefabToActive.SetActive(false);
             }
         }
         else
@@ -42,7 +46,7 @@ public class RejectButton : MonoBehaviour {
     {
         if (GameObject.FindWithTag("Check") == null)
         {
-            currentTime = 15f;
+            currentTime = 3.3f;
             Debug.Log("Mouse Down on RejectButton!");
 
             // Check if the object to move is assigned
@@ -51,15 +55,15 @@ public class RejectButton : MonoBehaviour {
                 // Change the position of the object
                 objectToMove.transform.position = newPosition;
                 Debug.Log(objectToMove.name + " moved to: " + newPosition);
-
+                prefabToActive.SetActive(true);
             }
-
             if (objectToDestroy.scene.isLoaded) // Check if the GameObject is in a loaded scene
             {
                 Destroy(objectToDestroy);
             }
         }
     }
+    
 
     // Optional: This method is called when the mouse hovers over the object
     private void OnMouseOver()

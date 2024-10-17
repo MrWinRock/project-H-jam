@@ -3,7 +3,7 @@ using System.Collections;  // Required for IEnumerator
 using System.Collections.Generic;  // Commonly used for lists and collections
 using UnityEngine;
 using UnityEngine.UI; 
-
+using UnityEngine.EventSystems;
 public class MiniCard : MonoBehaviour
 {
     private Vector3 offset;
@@ -11,7 +11,7 @@ public class MiniCard : MonoBehaviour
     private bool isDragging = false;
     private bool isInMachine = false;
     private float minX, maxX, minY, maxY;
-    public Image uiImage;
+    public GameObject uiImage;
 
     void Start()
     {
@@ -30,11 +30,19 @@ public class MiniCard : MonoBehaviour
 
     void Update()
     {
-        GameObject foundObject1 = GameObject.FindWithTag("Ghost");
-        GameObject foundObject2 = GameObject.FindWithTag("Shaman");
-        if (foundObject1 == null && foundObject2 == null)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Destroy(gameObject);
+            uiImage.gameObject.SetActive(false);
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+            // Check if the click is on a UI element or an object with a collider
+            if (!IsPointerOverUI() && !IsPointerOverGameObject())
+            {
+                // Click is outside, deactivate the target object
+                uiImage.gameObject.SetActive(false);
+                Debug.Log("Clicked outside, deactivating the target object.");
+            }
         }
     }
 
@@ -57,10 +65,25 @@ public class MiniCard : MonoBehaviour
             transform.position = targetPosition;
         }
     }
-
+    
+    
     void OnMouseUp()
     {
         isDragging = false;
+        if(uiImage.gameObject.activeInHierarchy == true)
+        {
+            if (uiImage != null)
+            {
+                uiImage.gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+            if (uiImage != null)
+            {
+                uiImage.gameObject.SetActive(true);
+            }
+        }
     }
     private Vector3 GetMouseWorldPosition()
     {
@@ -68,4 +91,29 @@ public class MiniCard : MonoBehaviour
         mousePoint.z = cam.nearClipPlane;
         return cam.ScreenToWorldPoint(mousePoint);
     }
+    
+    
+    private bool IsPointerOverUI()
+    {
+        return EventSystem.current.IsPointerOverGameObject();
+    }
+
+    // Check if the mouse pointer is over a 2D/3D object
+    private bool IsPointerOverGameObject()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (hit.collider.gameObject == uiImage.gameObject)
+            {
+                return true; // Clicked on the target object
+            }
+        }
+
+        return false; // Not clicking on the target object
+    }
+    
+    
 }

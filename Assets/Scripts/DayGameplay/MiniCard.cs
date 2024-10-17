@@ -30,12 +30,7 @@ public class MiniCard : MonoBehaviour
 
     void Update()
     {
-        GameObject foundObject1 = GameObject.FindWithTag("Ghost");
-        GameObject foundObject2 = GameObject.FindWithTag("Shaman");
-        if (foundObject1 == null && foundObject2 == null)
-        {
-            Destroy(gameObject);
-        }
+        
     }
 
     void OnMouseDown()
@@ -61,11 +56,33 @@ public class MiniCard : MonoBehaviour
     void OnMouseUp()
     {
         isDragging = false;
+        if(uiImage.gameObject.activeInHierarchy == true)
+        {
+            if (uiImage != null)
+            {
+                uiImage.gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+            if (uiImage != null)
+            {
+                uiImage.gameObject.SetActive(true);
+            }
+        }
     }
     private Vector3 GetMouseWorldPosition()
     {
         Vector3 mousePoint = Input.mousePosition;
         mousePoint.z = cam.nearClipPlane;
         return cam.ScreenToWorldPoint(mousePoint);
+    }
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ghost") || collision.CompareTag("Shaman")) 
+        { 
+            Destroy(gameObject);
+        }
     }
 }

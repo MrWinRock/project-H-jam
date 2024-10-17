@@ -40,9 +40,10 @@ public class AcceptTicket : MonoBehaviour
         private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("TicketClockIn"))
-        {
+        {   
+            GameObject foundObject2 = GameObject.FindWithTag("MiniCard");
             GameObject foundObject1 = GameObject.FindWithTag("Check");
-            if (foundObject1 != null)
+            if (foundObject1 != null && foundObject2 == null)
             {
                 currentTime = 15f;
 

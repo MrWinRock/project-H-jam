@@ -50,7 +50,13 @@ public class TicketClockIn : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject foundObject1 = GameObject.FindWithTag("Check");
-        if (foundObject1 != null)
+        GameObject foundObject2 = GameObject.FindWithTag("MiniCard");
+        if (foundObject1 != null && foundObject2 == null)
+        {
+            Destroy(gameObject);
+        }
+        
+        if (foundObject2 == null)
         {
             if (collision.CompareTag("Ghost") || collision.CompareTag("Shaman"))
             {
@@ -58,4 +64,5 @@ public class TicketClockIn : MonoBehaviour {
             }
         }
     }
+    
 }

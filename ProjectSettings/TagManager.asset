@@ -12,6 +12,8 @@ TagManager:
   - Shaman
   - Check
   - MainCard
+  - Lpd
+  - MiniCard
   layers:
   - Default
   - TransparentFX
@@ -23,8 +25,8 @@ TagManager:
   - Scene
   - ClockIn
   - Ghost
-  - 
-  - 
+  - Lpd
+  - BgOfBg
   - 
   - 
   - 
@@ -48,6 +50,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BgOfBg
+    uniqueID: 2161960631
     locked: 0
   - name: Ghost
     uniqueID: 1074494307

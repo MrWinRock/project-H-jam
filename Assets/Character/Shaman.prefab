@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9098550586216418581}
   - component: {fileID: 1990111692695841547}
   - component: {fileID: 53580482026331277}
+  - component: {fileID: 6859116830488959266}
   m_Layer: 9
   m_Name: Shaman
   m_TagString: Untagged
@@ -148,7 +149,9 @@ MonoBehaviour:
   targetPosition: {fileID: 8770164573865931430, guid: 244a018926f351941a3550224fbcb934, type: 3}
   speed: 2
   prefabToSpawn: {fileID: 1321083858160486237, guid: 4f8e587553bf11e479106b7768fe0801, type: 3}
-  spawnPosition: {x: 0, y: -1.9, z: 0}
+  prefabToSpawn2: {fileID: 8531491499445483573, guid: a1da3aa9f7ae5a449a6ff05afeae1de5, type: 3}
+  spawnPosition1: {x: 0.5, y: -0.9, z: 0}
+  spawnPosition2: {x: 0, y: 0.9, z: 0}
   middlePosition: {x: 0, y: 0, z: 0}
   spawnDelay: 1
 --- !u!50 &53580482026331277
@@ -178,6 +181,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6859116830488959266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3360065346236602427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05757be48f840274b8c0901c5d315ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newPosition: {x: 15, y: 0, z: 0}
+  oldPosition: {x: 0, y: 0, z: 0}
+  countdownTime: 0
+  objectToMove: {fileID: 1715994343513942710, guid: 244a018926f351941a3550224fbcb934, type: 3}
+  ticketClockIn: {fileID: 8299675735587527704, guid: c07981021ce88054d8b39a98b11bfbda, type: 3}
 --- !u!1 &4182596602897482763
 GameObject:
   m_ObjectHideFlags: 0

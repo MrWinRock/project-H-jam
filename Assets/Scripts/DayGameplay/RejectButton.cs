@@ -45,7 +45,7 @@ public class RejectButton : MonoBehaviour {
     {
         if (GameObject.FindWithTag("Check") == null)
         {
-            currentTime = 15f;
+            currentTime = 3.3f;
             Debug.Log("Mouse Down on RejectButton!");
 
             // Check if the object to move is assigned

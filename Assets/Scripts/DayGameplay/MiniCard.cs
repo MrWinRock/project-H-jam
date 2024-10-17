@@ -3,7 +3,7 @@ using System.Collections;  // Required for IEnumerator
 using System.Collections.Generic;  // Commonly used for lists and collections
 using UnityEngine;
 using UnityEngine.UI; 
-
+using UnityEngine.EventSystems;
 public class MiniCard : MonoBehaviour
 {
     private Vector3 offset;
@@ -36,6 +36,20 @@ public class MiniCard : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            uiImage.gameObject.SetActive(false);
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+            // Check if the click is on a UI element or an object with a collider
+            if (!IsPointerOverUI() && !IsPointerOverGameObject())
+            {
+                // Click is outside, deactivate the target object
+                uiImage.gameObject.SetActive(false);
+                Debug.Log("Clicked outside, deactivating the target object.");
+            }
+        }
     }
 
     void OnMouseDown()
@@ -57,7 +71,8 @@ public class MiniCard : MonoBehaviour
             transform.position = targetPosition;
         }
     }
-
+    
+    
     void OnMouseUp()
     {
         isDragging = false;
@@ -89,5 +104,27 @@ public class MiniCard : MonoBehaviour
         { 
             Destroy(gameObject);
         }
+    }
+    
+    private bool IsPointerOverUI()
+    {
+        return EventSystem.current.IsPointerOverGameObject();
+    }
+
+    // Check if the mouse pointer is over a 2D/3D object
+    private bool IsPointerOverGameObject()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (hit.collider.gameObject == uiImage.gameObject)
+            {
+                return true; // Clicked on the target object
+            }
+        }
+
+        return false; // Not clicking on the target object
     }
 }

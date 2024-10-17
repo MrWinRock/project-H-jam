@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7546826172782605100}
   - component: {fileID: 2486987145386416569}
   m_Layer: 6
-  m_Name: MiniCard 1
+  m_Name: MiniCard
   m_TagString: MainCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a797c3552fd144a9559dee533cc2e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiImage: {fileID: 0}
+  uiImage: {fileID: 834961440224700706, guid: a0981e3de94a5944b88fcc6d9d4363b5, type: 3}
 --- !u!61 &7546826172782605100
 BoxCollider2D:
   m_ObjectHideFlags: 0

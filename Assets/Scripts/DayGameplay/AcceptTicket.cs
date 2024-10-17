@@ -44,7 +44,7 @@ public class AcceptTicket : MonoBehaviour
             GameObject foundObject1 = GameObject.FindWithTag("Check");
             if (foundObject1 != null)
             {
-                currentTime = 15f;
+                currentTime = 3.3f;
 
                 // Check if the object to move is assigned
                 if (objectToMove != null)

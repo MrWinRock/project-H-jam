@@ -30,7 +30,12 @@ public class MiniCard : MonoBehaviour
 
     void Update()
     {
-        
+        GameObject foundObject1 = GameObject.FindWithTag("Ghost");
+        GameObject foundObject2 = GameObject.FindWithTag("Shaman");
+        if (foundObject1 == null && foundObject2 == null)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnMouseDown()

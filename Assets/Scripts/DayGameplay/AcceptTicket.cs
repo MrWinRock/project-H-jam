@@ -37,13 +37,12 @@ public class AcceptTicket : MonoBehaviour
             Debug.Log("Object with tag not exist in the scene.");
         }
     }
-        private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("TicketClockIn"))
         {   
-            GameObject foundObject2 = GameObject.FindWithTag("MiniCard");
             GameObject foundObject1 = GameObject.FindWithTag("Check");
-            if (foundObject1 != null && foundObject2 == null)
+            if (foundObject1 != null)
             {
                 currentTime = 15f;
 

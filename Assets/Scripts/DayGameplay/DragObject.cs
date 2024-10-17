@@ -74,9 +74,9 @@ public class DragObject : MonoBehaviour {
     }
 
     // Check if the object is close to the machine when released
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("ClockMachine"))
+        if (collision.CompareTag("ClockMachine") && !isDragging && !isInMachine)
         {
             StartCoroutine(SlideIntoMachine());
         }

@@ -17,6 +17,7 @@ TagManager:
   - Gun
   - NanIm
   - Sompong
+  - Audio
   layers:
   - Default
   - TransparentFX

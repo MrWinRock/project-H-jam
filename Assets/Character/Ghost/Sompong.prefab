@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3334342619029211863}
   m_Layer: 9
   m_Name: Input
-  m_TagString: Ghost
+  m_TagString: Sompong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 239918781257066147}
   m_Layer: 7
   m_Name: Sompong
-  m_TagString: Sompong
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,7 +216,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5265236, y: 2.5218005}
+  m_Offset: {x: 0.63037026, y: 2.6169941}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -227,7 +227,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9728832, y: 3.912243}
+  m_Size: {x: 2.2459521, y: 3.0987697}
   m_EdgeRadius: 0
 --- !u!114 &8949556583051611054
 MonoBehaviour:

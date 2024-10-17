@@ -17,6 +17,14 @@ TagManager:
   - Gun
   - NanIm
   - Sompong
+  - Nan
+  - Bangon
+  - God
+  - GunIm1
+  - GunIm2
+  - SompongIm
+  - SompongWrong
+  - BangonWrong
   layers:
   - Default
   - TransparentFX

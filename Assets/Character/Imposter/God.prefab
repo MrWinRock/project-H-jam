@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8419600870229671137}
   m_Layer: 7
   m_Name: God
-  m_TagString: Untagged
+  m_TagString: Shaman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,7 +121,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.25902116, y: 2.9470742}
+  m_Offset: {x: 0.2694875, y: 2.95754}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -132,7 +132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0486233, y: 4.340631}
+  m_Size: {x: 2.4416058, y: 3.9847927}
   m_EdgeRadius: 0
 --- !u!114 &4988289953413834588
 MonoBehaviour:
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 8424093655365842235}
   m_Layer: 9
   m_Name: Input
-  m_TagString: Shaman
+  m_TagString: God
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

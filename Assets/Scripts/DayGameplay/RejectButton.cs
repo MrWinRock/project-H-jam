@@ -8,7 +8,7 @@ public class RejectButton : MonoBehaviour {
     public GameObject objectToDestroy;    // Object to destroy  // Script to enable
     public GameObject objectToMove;
     public GameObject ticketClockIn;// Object to move
-    public GameObject prefabToSpawn;
+    public GameObject prefabToActive;
     public Vector3 newPosition;
     public Vector3 oldPosition;
     public float countdownTime;           // New position to set
@@ -54,13 +54,8 @@ public class RejectButton : MonoBehaviour {
                 // Change the position of the object
                 objectToMove.transform.position = newPosition;
                 Debug.Log(objectToMove.name + " moved to: " + newPosition);
-                if (!hasSpawned)
-                {
-                    SpawnObjects();
-                    hasSpawned = true;
-                }
+                prefabToActive.SetActive(true);
             }
-
             if (objectToDestroy.scene.isLoaded) // Check if the GameObject is in a loaded scene
             {
                 Destroy(objectToDestroy);
@@ -68,11 +63,6 @@ public class RejectButton : MonoBehaviour {
         }
     }
     
-    void SpawnObjects()
-    {
-        // Instantiate the prefabs at the spawn position with the default rotation
-        Instantiate(prefabToSpawn, spawnPosition1, Quaternion.identity);
-    }
 
     // Optional: This method is called when the mouse hovers over the object
     private void OnMouseOver()

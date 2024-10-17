@@ -17,7 +17,7 @@ public class DestoryLpd : MonoBehaviour
         currentTime -= Time.deltaTime; // Decrease the timer by the time elapsed since the last frame
         if (currentTime <= 0)
         {
-            Destroy(gameObject); // Destroy the GameObject when the timer reaches zero
+            gameObject.SetActive(false); // Destroy the GameObject when the timer reaches zero
         }
     }
 }

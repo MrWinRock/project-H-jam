@@ -11,7 +11,7 @@ public class MiniCard : MonoBehaviour
     private bool isDragging = false;
     private bool isInMachine = false;
     private float minX, maxX, minY, maxY;
-    public Image uiImage;
+    public GameObject uiImage;
 
     void Start()
     {
@@ -30,12 +30,6 @@ public class MiniCard : MonoBehaviour
 
     void Update()
     {
-        GameObject foundObject1 = GameObject.FindWithTag("Ghost");
-        GameObject foundObject2 = GameObject.FindWithTag("Shaman");
-        if (foundObject1 == null && foundObject2 == null)
-        {
-            Destroy(gameObject);
-        }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             uiImage.gameObject.SetActive(false);
@@ -98,13 +92,6 @@ public class MiniCard : MonoBehaviour
         return cam.ScreenToWorldPoint(mousePoint);
     }
     
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Ghost") || collision.CompareTag("Shaman")) 
-        { 
-            Destroy(gameObject);
-        }
-    }
     
     private bool IsPointerOverUI()
     {
@@ -127,4 +114,6 @@ public class MiniCard : MonoBehaviour
 
         return false; // Not clicking on the target object
     }
+    
+    
 }

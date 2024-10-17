@@ -16,11 +16,11 @@ GameObject:
   - component: {fileID: 8203627403263559606}
   m_Layer: 7
   m_Name: NanIm
-  m_TagString: Untagged
+  m_TagString: NanIm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5956455160678539231
 Transform:
   m_ObjectHideFlags: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   prefabToSpawn: {fileID: 1321083858160486237, guid: 4f8e587553bf11e479106b7768fe0801, type: 3}
   prefabToSpawn2: {fileID: 0}
   spawnPosition1: {x: 0.5, y: -0.9, z: 0}
-  spawnPosition2: {x: 0, y: -0.9, z: 0}
+  spawnPosition2: {x: -0.5, y: -0.9, z: 0}
   middlePosition: {x: 0, y: 1.5, z: 0}
   spawnDelay: 1
 --- !u!50 &2426875763103640313

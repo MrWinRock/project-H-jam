@@ -54,4 +54,12 @@ public class ScoreCount : MonoBehaviour
             score = PlayerPrefs.GetInt("Score");
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ghost")) 
+        {
+            AddScore();
+        }
+    }
 }

@@ -5,22 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MenuScreen.unity
     guid: 4b95ca5e62198734f87ce0a013a6084b
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-    path: Assets/Scenes/NightGamePlay.unity
-    guid: 6fca585f2f3fa5045b89ecf03f99c5bb
     path: Assets/Scenes/Cutscene.unity
     guid: dc28319184178784bb944a05e1cf06c1
   - enabled: 1
     path: Assets/Scenes/DayGameplay.unity
     guid: 1a93ed8617c0b9249801d418df1afcc1
   - enabled: 1
+    path: Assets/Scenes/csDay2.unity
+    guid: 04167714efa44204bbdc5665e8056b20
+  - enabled: 1
     path: Assets/Scenes/DayGameplay 2.unity
     guid: 788901aaf873f624cb33710e3061a6e0
+  - enabled: 1
+    path: Assets/Scenes/csDay3.unity
+    guid: eb962735ca223814e8a6ff00e7f62666
   - enabled: 1
     path: Assets/Scenes/DayGameplay 3.unity
     guid: 972e5c5b34e36704aa977a7e05ddcf1d
@@ -28,11 +30,3 @@ EditorBuildSettings:
     path: Assets/Scenes/End.unity
     guid: fde89a599d3db69448804e65aba6a249
   m_configObjects: {}
-    path: Assets/Scenes/NightGamePlay.unity
-    guid: 6fca585f2f3fa5045b89ecf03f99c5bb
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  m_configObjects:
-    com.unity.addressableassets: {fileID: 11400000, guid: 63d474cf4b15a9b40beda73dea91828f, type: 2}
-    com.unity.localization.settings: {fileID: 11400000, guid: 4af8bd61260e6ab4686685ab4e6de12b, type: 2}

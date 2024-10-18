@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 629611426968349421}
   m_Layer: 0
   m_Name: SompongCard
-  m_TagString: Untagged
+  m_TagString: MainCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

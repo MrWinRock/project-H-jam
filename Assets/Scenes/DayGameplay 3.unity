@@ -1085,6 +1085,10 @@ MonoBehaviour:
   musicSource: {fileID: 367089957}
   SFXSource: {fileID: 2004169042}
   backgroundMusic: {fileID: 8300000, guid: b410029b30d44b5408de04889cb78b2b, type: 3}
+  cardClick: {fileID: 8300000, guid: 20cc3d184c6100745bc8f966cd20e85c, type: 3}
+  mrPo: {fileID: 8300000, guid: 77b6d7f4a2229214794fea5e6a94be88, type: 3}
+  checker: {fileID: 0}
+  cardSend: {fileID: 8300000, guid: a9e6d49429bf4c642b88e8282a0f8a18, type: 3}
 --- !u!4 &1005719329
 Transform:
   m_ObjectHideFlags: 0
@@ -2722,6 +2726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GunIm2MiniCard
       objectReference: {fileID: 0}
+    - target: {fileID: 4822120533058624442, guid: 8871454da3e33c7479fcc57ec36462af, type: 3}
+      propertyPath: m_TagString
+      value: MainCard
+      objectReference: {fileID: 0}
     - target: {fileID: 6368044315199942971, guid: 8871454da3e33c7479fcc57ec36462af, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.913769
@@ -3041,7 +3049,7 @@ GameObject:
   - component: {fileID: 4282271686615882765}
   m_Layer: 5
   m_Name: EmpList
-  m_TagString: Untagged
+  m_TagString: MainCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

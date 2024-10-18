@@ -62,4 +62,8 @@ public class ScoreCount : MonoBehaviour
             AddScore();
         }
     }
+    public int GetScore()
+    {
+        return score;
+    }
 }

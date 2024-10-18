@@ -671,7 +671,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1547097217
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1515,7 +1515,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1547097217
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b7b46816d922ea74f8a4529d7efd9f0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2033,6 +2033,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 106017328}
     m_Modifications:
+    - target: {fileID: 171681356051527, guid: 0530f73c7f59f8145a68f83bc2276e91, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 171681356051527, guid: 0530f73c7f59f8145a68f83bc2276e91, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 990047107
+      objectReference: {fileID: 0}
     - target: {fileID: 2659886784784187050, guid: 0530f73c7f59f8145a68f83bc2276e91, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.913769
@@ -2881,6 +2889,14 @@ PrefabInstance:
     - target: {fileID: 3890841666291177185, guid: e28f09682ac7dc1429600bcbc11884a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139898850301541664, guid: e28f09682ac7dc1429600bcbc11884a4, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139898850301541664, guid: e28f09682ac7dc1429600bcbc11884a4, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1547097217
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

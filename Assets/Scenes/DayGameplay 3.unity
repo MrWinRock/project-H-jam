@@ -597,9 +597,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e131e594c6b59f14b9ea51e338fa051d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdownTime: 138
+  countdownTime: 150
   countdownText: {fileID: 241169301118623855}
-  sceneToLoad: NightGamePlay
 --- !u!4 &406929669
 Transform:
   m_ObjectHideFlags: 0
@@ -2138,7 +2137,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1547097217
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b7b46816d922ea74f8a4529d7efd9f0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2251,8 +2250,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2975,8 +2974,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 227, y: -250}
-  m_SizeDelta: {x: 170.2057, y: 101.8001}
+  m_AnchoredPosition: {x: 300, y: -480}
+  m_SizeDelta: {x: 400, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!50 &2117439058491076144
 Rigidbody2D:
@@ -3175,7 +3174,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1547097217
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 073804b8786d1074b9d92db99d8a2ab7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3809,7 +3808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 301, y: -149}
+  m_AnchoredPosition: {x: 540, y: -300}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &6131950573187384181

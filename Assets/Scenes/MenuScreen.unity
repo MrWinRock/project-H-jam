@@ -1084,8 +1084,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -102}
-  m_SizeDelta: {x: 258.906, y: 127.2679}
+  m_AnchoredPosition: {x: 0.000015259, y: -199}
+  m_SizeDelta: {x: 578.1746, y: 284.2077}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &698923312
 MonoBehaviour:
@@ -1401,8 +1401,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 106}
-  m_SizeDelta: {x: 329.5435, y: 112.9983}
+  m_AnchoredPosition: {x: 0, y: 251}
+  m_SizeDelta: {x: 1078.7448, y: 369.8944}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &882609729
 MonoBehaviour:
@@ -1451,8 +1451,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 78.5
+  m_fontSizeBase: 78.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2684,6 +2684,10 @@ MonoBehaviour:
   musicSource: {fileID: 1670120408}
   SFXSource: {fileID: 2048995129}
   backgroundMusic: {fileID: 8300000, guid: 51e811ff9df6a064a96490274fce8797, type: 3}
+  cardClick: {fileID: 0}
+  mrPo: {fileID: 0}
+  checker: {fileID: 0}
+  cardSend: {fileID: 0}
 --- !u!4 &1920890092
 Transform:
   m_ObjectHideFlags: 0

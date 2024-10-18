@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;  // For changing scenes
 public class CountdownTimer : MonoBehaviour {
     public float countdownTime = 360f;  // 6 minutes in seconds
     public TextMeshProUGUI countdownText;  // Reference to the TMP text component
-    public string sceneToLoad = "NightGamePlay";  // The scene to load when time is up
+    // public string sceneToLoad = "MenuScreen";  // The scene to load when time is up
 
     private float currentTime;
 
@@ -48,6 +48,6 @@ public class CountdownTimer : MonoBehaviour {
     // Function to change the scene when the time is up
     void ChangeScene()
     {
-        SceneManager.LoadScene(sceneToLoad);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

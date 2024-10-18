@@ -25,6 +25,7 @@ TagManager:
   - SompongIm
   - SompongWrong
   - BangonWrong
+  - Audio
   layers:
   - Default
   - TransparentFX

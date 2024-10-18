@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2388260304315692665}
   m_Layer: 9
   m_Name: Input
-  m_TagString: Shaman
+  m_TagString: SompongIm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 565735098213928826}
   m_Layer: 7
   m_Name: SompongIm
-  m_TagString: Untagged
+  m_TagString: Shaman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

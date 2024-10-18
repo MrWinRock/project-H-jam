@@ -10,7 +10,7 @@ namespace DayGameplay
     public class GhostList : MonoBehaviour
     {
         public GameObject[] ghosts;
-        private int currentGhostIndex = 0;
+        public int currentGhostIndex = 0;
         public float delayBetweenGhosts = 2f; // Delay in seconds
         private bool isWaitingForNextGhost = false; // To ensure no overlapping coroutines
         public bool isGhost;

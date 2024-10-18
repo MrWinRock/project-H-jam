@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3863374030702234893}
   m_Layer: 9
   m_Name: Input
-  m_TagString: Shaman
+  m_TagString: GunIm1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,7 +65,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.70001507, y: 3.089705}
+  m_Offset: {x: 0.7567787, y: 3.0215893}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2862377, y: 2.9680605}
+  m_Size: {x: 3.8992844, y: 3.512988}
   m_EdgeRadius: 0
 --- !u!114 &3863374030702234893
 MonoBehaviour:
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 7977594532302107705}
   m_Layer: 7
   m_Name: GunIm1
-  m_TagString: Untagged
+  m_TagString: Shaman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,7 +216,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.71572626, y: 2.950673}
+  m_Offset: {x: 0.7838421, y: 3.0414941}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -227,7 +227,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.9620335, y: 3.522006}
+  m_Size: {x: 3.3716965, y: 3.2041316}
   m_EdgeRadius: 0
 --- !u!114 &8361902904794836692
 MonoBehaviour:

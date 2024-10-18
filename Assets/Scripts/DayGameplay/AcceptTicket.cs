@@ -80,19 +80,18 @@ public class AcceptTicket : MonoBehaviour
                 {
                     Debug.LogError("objectToMove is not assigned.");
                 }
-
-                if (ghostList != null && isGhost)
-                {
-                    if (score != null)
-                    {
-                        score.AddScore();
-                        Debug.Log("Score added.");
-                    }
-                    else
-                    {
-                        Debug.LogError("ScoreCount component not found.");
-                    }
-                }
+                // if (ghostList != null && isGhost)
+                // {
+                //     if (score != null)
+                //     {
+                //         score.AddScore();
+                //         Debug.Log("Score added.");
+                //     }
+                //     else
+                //     {
+                //         Debug.LogError("ScoreCount component not found.");
+                //     }
+                // }
             }
             else
             {

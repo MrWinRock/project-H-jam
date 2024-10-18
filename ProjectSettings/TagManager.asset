@@ -75,9 +75,12 @@ TagManager:
   - name: DragObject
     uniqueID: 2291386685
     locked: 0
+  - name: Button
+    uniqueID: 1547097217
+    locked: 0
   - name: ClockInMachine
     uniqueID: 725869361
     locked: 0
-  - name: Button
-    uniqueID: 1547097217
+  - name: Card
+    uniqueID: 990047107
     locked: 0
